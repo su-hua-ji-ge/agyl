@@ -1,0 +1,5 @@
+DEBUG:root:握手debug
+INFO:root:我是info
+WARNING:root:我是warning
+ERROR:root:我是error
+CRITICAL:root:我是critical
