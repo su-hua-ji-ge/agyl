@@ -63,14 +63,19 @@ pe.eat("dd")  #调用方法时去传参，不用实例化简化
 #类方法内部可以方法类属性，或者调用其他的类方法
 class Person(object):
     name = "bingbing"       #类属性
-    @classmethod
+    @classmethod    #类方法：针对类存在的方法
     def sleep(cls):
         print("cls:",cls)    #cls代表类对象本身，类本质上就是一个对象
         print("睡觉")
-        print(cls.name)
+        # print(self.age)  #访问不到实例属性
+        print(cls.name)#访问类属性
 print(Person.sleep())
 Person.sleep()
 #当方法中需要使用类对象（如访问私有类属性等），定义类方法
 #类方法一般是配合类属性使用
 #类当然可以调用实例方法了，只不过要传一个对象实例的self参数进去，
 # 静态方法就是优化掉实例化这一步，类方法不仅可以优化掉实例化，也可以当实例调用类方法时使用类属性
+# self代表的是对象，cls代表的是类
+
+#类属性是公共的，所有方法都可以访问到，静态方法不需要放访问类属性，它和静态方法和类，对象没有关系
+# 实例属性是私有的，只有实例方法内部可以可以访问

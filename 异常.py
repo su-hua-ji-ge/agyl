@@ -5,6 +5,7 @@
 #try:
 #可能引发异常现象的代码
 #         不确定能否正常执行的代码
+a=2
 try:
     print(a)
 except:   #默认基类异常
@@ -25,8 +26,9 @@ except Exception as err: #万能捕获异常Exception
     print(err)
 print("A")\
 #格式3：多分支异常
+sa = 1
 try:
-    pritn(s)
+    print(sa)
 except IndexError as sa:
     print(sa)
 except KeyError as sa:

@@ -1,8 +1,8 @@
-# print("Hell World")
+print("Hell World")
 #
-# a2=23
-# a5=565
-# print(a2*a5+5)
+a2=23
+a5=565
+print(a2*a5+5)
 # # aaa=3
 # aab=0.2
 # print(aab)

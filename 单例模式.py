@@ -51,7 +51,7 @@ class Person(object):
     #     print(self.age)
     @staticmethod
     def introduce():
-        print(f"我是{Person.name}f")     #静态方法能够访问类属性，但是毫无意义，静态方法不支持访问类属性
+        print(f"我是{Person}f")     #静态方法能够访问类属性，但是毫无意义，静态方法不支持访问类属性
     @classmethod
     def show(cls):   #cls代表对象本身
         print(cls.name)    #所以cls可以替换掉类本身
@@ -67,4 +67,3 @@ pe.introduce()
 #2.通过装饰器
 #3.通过重写__new__实现
 #4.通过导入模块实现
- 
